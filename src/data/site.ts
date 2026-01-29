@@ -30,7 +30,6 @@ export const navigation = {
     { name: "Démonstration", href: "/services/demo" },
     { name: "Gestion des Exploitations", href: "/services/gestion" },
     { name: "Rapports Intelligents", href: "/services/reports" },
-    { name: "Diagnostic Sol", href: "/services/diagnostic" },
     { name: "Irrigation Intelligente", href: "/services/irrigation" },
     { name: "Monitoring & Alertes", href: "/services/monitoring" },
     { name: "Station Météo", href: "/services/meteo" },

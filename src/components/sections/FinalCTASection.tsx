@@ -44,7 +44,7 @@ export function FinalCTASection() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               size="lg"
-              className="bg-white text-green-700 hover:bg-green-50 text-base h-14 px-10 text-lg font-semibold"
+              className="bg-white text-green-700 hover:bg-green-50 h-14 px-10 text-lg font-semibold"
             >
               Demander une Démo
               <ArrowRight className="ml-2 h-5 w-5" />

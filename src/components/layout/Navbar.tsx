@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, Sprout, ChevronDown, Layers, Droplets, Activity, FlaskConical, FileText, Monitor, CloudSun, Plane } from "lucide-react";
+import { Menu, X, Sprout, ChevronDown, Layers, Droplets, Activity, FileText, Monitor, CloudSun, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigation, siteConfig } from "@/data/site";
@@ -12,7 +12,6 @@ const serviceIcons: Record<string, React.ElementType> = {
   "Démonstration": Monitor,
   "Gestion des Exploitations": Layers,
   "Rapports Intelligents": FileText,
-  "Diagnostic Sol": FlaskConical,
   "Irrigation Intelligente": Droplets,
   "Monitoring & Alertes": Activity,
   "Station Météo": CloudSun,

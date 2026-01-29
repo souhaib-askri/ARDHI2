@@ -1,11 +1,11 @@
 import { Navbar, Footer } from "@/components/layout";
 import {
   HeroSection,
-  FeaturesSection,
-  HowItWorksSection,
-  PricingSection,
-  TestimonialsSection,
-  CTASection,
+  ProblemSection,
+  SolutionSection,
+  PlatformPreviewSection,
+  ImpactSection,
+  FinalCTASection,
 } from "@/components/sections";
 
 export default function HomePage() {
@@ -14,11 +14,11 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
-        <FeaturesSection />
-        <HowItWorksSection />
-        <TestimonialsSection />
-        <PricingSection />
-        <CTASection />
+        <ProblemSection />
+        <SolutionSection />
+        <PlatformPreviewSection />
+        <ImpactSection />
+        <FinalCTASection />
       </main>
       <Footer />
     </>

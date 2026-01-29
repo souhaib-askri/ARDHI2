@@ -1,6 +1,13 @@
 export { HeroSection } from "./HeroSection";
+export { ProblemSection } from "./ProblemSection";
+export { SolutionSection } from "./SolutionSection";
+export { PlatformPreviewSection } from "./PlatformPreviewSection";
+export { ImpactSection } from "./ImpactSection";
+export { FinalCTASection } from "./FinalCTASection";
 export { FeaturesSection } from "./FeaturesSection";
+export { SolutionsSection } from "./SolutionsSection";
 export { HowItWorksSection } from "./HowItWorksSection";
 export { PricingSection } from "./PricingSection";
 export { TestimonialsSection } from "./TestimonialsSection";
+export { PartnersSection } from "./PartnersSection";
 export { CTASection } from "./CTASection";

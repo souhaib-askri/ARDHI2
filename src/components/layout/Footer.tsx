@@ -10,9 +10,9 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-12 lg:py-16">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
             {/* Brand Column */}
-            <div className="col-span-2">
+            <div className="col-span-2 md:col-span-3 lg:col-span-2">
               <Link href="/" className="flex items-center gap-2">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-600">
                   <Sprout className="h-5 w-5 text-white" />
@@ -22,9 +22,8 @@ export function Footer() {
                 </span>
               </Link>
               <p className="mt-4 max-w-xs text-sm text-gray-400">
-                Empowering farmers with IoT sensors, satellite intelligence, and
-                AI-driven recommendations for sustainable, profitable
-                agriculture.
+                Plateforme intelligente pour une agriculture durable. Diagnostic préventif, 
+                optimisation des ressources et recommandations IA personnalisées.
               </p>
               <div className="mt-6 flex gap-4">
                 <a
@@ -64,23 +63,6 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Product Links */}
-            <div>
-              <h3 className="text-sm font-semibold text-white">Product</h3>
-              <ul className="mt-4 space-y-3">
-                {navigation.footer.product.map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-sm text-gray-400 transition-colors hover:text-white"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             {/* Solutions Links */}
             <div>
               <h3 className="text-sm font-semibold text-white">Solutions</h3>
@@ -98,9 +80,26 @@ export function Footer() {
               </ul>
             </div>
 
+            {/* Capabilities Links */}
+            <div>
+              <h3 className="text-sm font-semibold text-white">Capacités</h3>
+              <ul className="mt-4 space-y-3">
+                {navigation.footer.capabilities.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-gray-400 transition-colors hover:text-white"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Resources Links */}
             <div>
-              <h3 className="text-sm font-semibold text-white">Resources</h3>
+              <h3 className="text-sm font-semibold text-white">Ressources</h3>
               <ul className="mt-4 space-y-3">
                 {navigation.footer.resources.map((item) => (
                   <li key={item.name}>
@@ -117,7 +116,7 @@ export function Footer() {
 
             {/* Company Links */}
             <div>
-              <h3 className="text-sm font-semibold text-white">Company</h3>
+              <h3 className="text-sm font-semibold text-white">Entreprise</h3>
               <ul className="mt-4 space-y-3">
                 {navigation.footer.company.map((item) => (
                   <li key={item.name}>
@@ -138,7 +137,7 @@ export function Footer() {
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-400">
-              © {currentYear} {siteConfig.name}. All rights reserved.
+              © {currentYear} {siteConfig.name}. Tous droits réservés.
             </p>
             <div className="flex gap-6">
               {navigation.footer.legal.map((item) => (

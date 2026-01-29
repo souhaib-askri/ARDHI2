@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { RefreshCw, Cpu, Loader2, Send } from 'lucide-react';
+import { MarkdownReader } from '../components/MarkdownReader';
 
 interface AIAnalysisViewProps {
   data: RealTimeData;
@@ -77,9 +78,7 @@ export const AIAnalysisView: React.FC<AIAnalysisViewProps> = ({ data }) => {
                     <p className="text-slate-400 font-medium">L'intelligence artificielle analyse vos capteurs...</p>
                   </div>
                 ) : (
-                  <div className="text-slate-700 leading-relaxed whitespace-pre-line text-lg">
-                    {analysis}
-                  </div>
+                  <MarkdownReader content={analysis} className="text-lg" />
                 )}
               </div>
 

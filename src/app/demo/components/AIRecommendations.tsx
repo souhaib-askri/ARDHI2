@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Sparkles, Droplet, Shield } from 'lucide-react';
+import { MarkdownReader } from './MarkdownReader';
 
 interface AIRecommendationsProps {
   recommendations: AIRecommendation[];
@@ -49,7 +50,9 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({ recommenda
                     {rec.priority}
                   </Badge>
                 </div>
-                <p className="text-sm text-slate-600 leading-snug">{rec.message}</p>
+                <p className="text-sm leading-snug">
+                  <MarkdownReader content={rec.message} className="text-slate-600" />
+                </p>
                 <div className="mt-3 flex gap-2">
                   <Button 
                     size="sm" 
@@ -74,9 +77,10 @@ export const AIRecommendations: React.FC<AIRecommendationsProps> = ({ recommenda
       <Card className="mt-6 bg-emerald-50 border-emerald-100 rounded-2xl">
         <CardContent className="p-4">
           <p className="text-xs font-bold text-emerald-800 mb-2 italic">Aperçu IA</p>
-          <p className="text-sm text-emerald-700/80">
-            Les conditions météo prévoient des précipitations demain à 14h. Économisez 20L d'eau en reportant l'irrigation.
-          </p>
+          <MarkdownReader 
+            content="Les conditions météo prévoient des **précipitations demain à 14h**. Économisez `20L d'eau` en reportant l'irrigation." 
+            className="text-sm text-emerald-700/80"
+          />
         </CardContent>
       </Card>
     </div>

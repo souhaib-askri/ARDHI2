@@ -2,7 +2,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { RealTimeData } from "../types";
 
-const API_KEY = "AIzaSyD7uzkFt7SSPfn-QK79hyuZpc5QQh3PH6I" ;
+const API_KEY = "AIzaSyCWoFggbgW0WffUL6F0e4RtboCERFLW1-w" ;
 
 export const getAIAnalysis = async (data: RealTimeData, userQuery?: string) => {
   if (!API_KEY) return "Veuillez configurer votre clé API pour bénéficier des analyses IA.";
